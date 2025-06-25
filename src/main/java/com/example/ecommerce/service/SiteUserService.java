@@ -2,8 +2,10 @@ package com.example.ecommerce.service;
 
 import com.example.ecommerce.dto.SiteUserDTO;
 import com.example.ecommerce.entity.SiteUser;
+import com.example.ecommerce.entity.Role;
 import com.example.ecommerce.mapper.SiteUserMapper;
 import com.example.ecommerce.repository.SiteUserRepository;
+import com.example.ecommerce.repository.RoleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -12,9 +14,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.core.userdetails.User;
 import java.util.Collections;
-
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -22,6 +24,7 @@ public class SiteUserService implements UserDetailsService {
     private final SiteUserRepository userRepository;
     private final SiteUserMapper userMapper;
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    private final RoleRepository roleRepository;
 
     public List<SiteUserDTO> getAllUsers() {
         return userRepository.findAll().stream()
@@ -38,6 +41,14 @@ public class SiteUserService implements UserDetailsService {
     public SiteUserDTO createUser(SiteUserDTO dto, String rawPassword) {
         SiteUser user = userMapper.toEntity(dto);
         user.setPassword(passwordEncoder.encode(rawPassword));
+
+        // Fix: fetch roles from DB
+        Set<Role> managedRoles = dto.getRoles().stream()
+            .map(roleDto -> roleRepository.findByName(roleDto.getName())
+                .orElseThrow(() -> new RuntimeException("Role not found: " + roleDto.getName())))
+            .collect(Collectors.toSet());
+        user.setRoles(managedRoles);
+
         return userMapper.toDto(userRepository.save(user));
     }
 
