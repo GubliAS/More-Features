@@ -1,109 +1,109 @@
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\config\CorsConfig.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\config\SecurityConfig.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\AddressController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\AuthController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\OrderStatusController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\OrderStatusHistoryController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\PaymentMethodController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\ProductController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\PromotionController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\ShippingMethodController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\ShopOrderController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\ShoppingCartController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\SiteUserController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\controller\UserReviewController.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\AddressDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\OrderLineDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\OrderStatusDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\OrderStatusHistoryDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\PaymentTypeDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\ProductDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\PromotionCategoryDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\PromotionDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\RoleDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\ShippingMethodDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\ShopOrderDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\ShoppingCartDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\ShoppingCartItemDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\SiteUserDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\UserAddressDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\UserPaymentMethodDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\dto\UserReviewDTO.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\EcommerceApplication.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\Address.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\Country.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\OrderLine.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\OrderStatus.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\OrderStatusHistory.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\PaymentType.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\Product.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\ProductCategory.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\ProductItem.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\Promotion.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\PromotionCategory.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\PromotionCategoryId.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\Role.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\ShippingMethod.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\ShopOrder.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\ShoppingCart.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\ShoppingCartItem.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\SiteUser.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\UserAddress.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\UserAddressId.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\UserPaymentMethod.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\entity\UserReview.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\exception\DuplicateResourceException.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\exception\GlobalExceptionHandler.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\exception\InvalidOperationException.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\exception\ResourceNotFoundException.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\AddressMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\OrderLineMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\OrderStatusHistoryMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\OrderStatusMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\PaymentTypeMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\ProductMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\PromotionCategoryMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\PromotionMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\RoleMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\ShippingMethodMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\ShopOrderMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\ShoppingCartItemMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\ShoppingCartMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\SiteUserMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\UserAddressMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\UserPaymentMethodMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\mapper\UserReviewMapper.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\AddressRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\CountryRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\OrderLineRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\OrderStatusHistoryRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\OrderStatusRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\PaymentTypeRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\ProductCategoryRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\ProductItemRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\ProductRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\PromotionCategoryRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\PromotionRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\RoleRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\ShippingMethodRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\ShopOrderRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\ShoppingCartItemRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\ShoppingCartRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\SiteUserRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\UserAddressRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\UserPaymentMethodRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\repository\UserReviewRepository.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\security\JwtAuthenticationFilter.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\security\JwtUtil.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\AddressService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\EmailService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\OrderStatusHistoryService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\OrderStatusService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\PaymentMethodService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\ProductService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\PromotionService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\ShippingMethodService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\ShopOrderService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\ShoppingCartService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\SiteUserService.java
-D:\SwiftMart_App\Backend\src\main\java\com\example\ecommerce\service\UserReviewService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\config\CorsConfig.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\config\SecurityConfig.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\AddressController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\AuthController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\OrderStatusController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\OrderStatusHistoryController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\PaymentMethodController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\ProductController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\PromotionController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\ShippingMethodController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\ShopOrderController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\ShoppingCartController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\SiteUserController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\controller\UserReviewController.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\AddressDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\OrderLineDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\OrderStatusDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\OrderStatusHistoryDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\PaymentTypeDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\ProductDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\PromotionCategoryDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\PromotionDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\RoleDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\ShippingMethodDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\ShopOrderDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\ShoppingCartDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\ShoppingCartItemDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\SiteUserDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\UserAddressDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\UserPaymentMethodDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\dto\UserReviewDTO.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\EcommerceApplication.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\Address.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\Country.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\OrderLine.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\OrderStatus.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\OrderStatusHistory.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\PaymentType.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\Product.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\ProductCategory.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\ProductItem.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\Promotion.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\PromotionCategory.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\PromotionCategoryId.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\Role.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\ShippingMethod.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\ShopOrder.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\ShoppingCart.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\ShoppingCartItem.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\SiteUser.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\UserAddress.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\UserAddressId.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\UserPaymentMethod.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\entity\UserReview.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\exception\DuplicateResourceException.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\exception\GlobalExceptionHandler.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\exception\InvalidOperationException.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\exception\ResourceNotFoundException.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\AddressMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\OrderLineMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\OrderStatusHistoryMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\OrderStatusMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\PaymentTypeMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\ProductMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\PromotionCategoryMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\PromotionMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\RoleMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\ShippingMethodMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\ShopOrderMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\ShoppingCartItemMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\ShoppingCartMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\SiteUserMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\UserAddressMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\UserPaymentMethodMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\mapper\UserReviewMapper.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\AddressRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\CountryRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\OrderLineRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\OrderStatusHistoryRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\OrderStatusRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\PaymentTypeRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\ProductCategoryRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\ProductItemRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\ProductRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\PromotionCategoryRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\PromotionRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\RoleRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\ShippingMethodRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\ShopOrderRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\ShoppingCartItemRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\ShoppingCartRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\SiteUserRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\UserAddressRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\UserPaymentMethodRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\repository\UserReviewRepository.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\security\JwtAuthenticationFilter.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\security\JwtUtil.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\AddressService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\EmailService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\OrderStatusHistoryService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\OrderStatusService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\PaymentMethodService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\ProductService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\PromotionService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\ShippingMethodService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\ShopOrderService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\ShoppingCartService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\SiteUserService.java
+C:\Users\alexo\New folder\src\main\java\com\example\ecommerce\service\UserReviewService.java
