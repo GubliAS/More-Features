@@ -69,8 +69,36 @@ public class SiteUserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        System.out.println("Loading user by username: " + email);
         SiteUser user = userRepository.findByEmailAddress(email)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
+        System.out.println("User found: " + user.getEmailAddress() + ", password length: " + user.getPassword().length());
         return new User(user.getEmailAddress(), user.getPassword(), Collections.emptyList());
+    }
+
+    public boolean checkEmailExists(String email) {
+        return userRepository.findByEmailAddress(email).isPresent();
+    }
+
+    public void resetPassword(String email, String newPassword) {
+        SiteUser user = userRepository.findByEmailAddress(email)
+                .orElseThrow(() -> new RuntimeException("User not found with email: " + email));
+        user.setPassword(passwordEncoder.encode(newPassword));
+        userRepository.save(user);
+    }
+
+    public boolean changePassword(String email, String currentPassword, String newPassword) {
+        SiteUser user = userRepository.findByEmailAddress(email)
+                .orElseThrow(() -> new RuntimeException("User not found with email: " + email));
+        
+        // Verify current password
+        if (!passwordEncoder.matches(currentPassword, user.getPassword())) {
+            return false;
+        }
+        
+        // Update to new password
+        user.setPassword(passwordEncoder.encode(newPassword));
+        userRepository.save(user);
+        return true;
     }
 } 
