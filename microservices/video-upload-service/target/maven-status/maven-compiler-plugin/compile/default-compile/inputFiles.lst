@@ -1,0 +1,14 @@
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\repository\VideoUploadRepository.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\dto\VideoMetadataDTO.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\dto\VideoUploadDTO.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\entity\VideoUpload.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\service\VideoSecurityService.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\controller\VideoUploadController.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\dto\VideoUploadResponse.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\dto\VideoUploadRequest.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\VideoUploadServiceApplication.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\service\VideoStreamingService.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\service\VideoCleanupService.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\mapper\VideoUploadMapper.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\service\VideoUploadService.java
+C:\Users\alexo\New folder\microservices\video-upload-service\src\main\java\com\example\videoupload\service\VideoAuthService.java

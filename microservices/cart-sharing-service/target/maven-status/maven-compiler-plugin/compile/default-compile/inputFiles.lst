@@ -1,0 +1,13 @@
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\service\CartSharingService.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\client\EmailClient.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\entity\CartInvitation.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\dto\CreateShareRequest.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\repository\CartShareRepository.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\dto\CartInvitationDTO.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\dto\CartShareDTO.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\controller\CartSharingController.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\dto\AcceptInvitationRequest.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\entity\CartShare.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\repository\CartInvitationRepository.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\dto\InviteUserRequest.java
+C:\Users\alexo\New folder\microservices\cart-sharing-service\src\main\java\com\example\cartsharing\CartSharingServiceApplication.java

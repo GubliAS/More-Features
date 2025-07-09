@@ -1,0 +1,5 @@
+com\example\barcodesearch\client\ProductClient.class
+com\example\barcodesearch\controller\BarcodeSearchController.class
+com\example\barcodesearch\controller\BarcodeSearchController$BarcodeScanRequest.class
+com\example\barcodesearch\BarcodeSearchServiceApplication.class
+com\example\barcodesearch\service\BarcodeSearchService.class

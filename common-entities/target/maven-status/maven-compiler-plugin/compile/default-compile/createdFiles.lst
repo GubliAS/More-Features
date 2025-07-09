@@ -1,0 +1,4 @@
+com\example\commonentities\OrderStatus.class
+com\example\commonentities\SiteUserDTO.class
+com\example\commonentities\ShopOrder.class
+com\example\commonentities\SiteUser.class
