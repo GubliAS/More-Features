@@ -1,6 +1,7 @@
 package com.example.siteuser.service;
 
 import com.example.siteuser.dto.SiteUserDTO;
+import com.example.siteuser.dto.RoleDTO;
 import com.example.siteuser.entity.SiteUser;
 import com.example.siteuser.entity.Role;
 import com.example.siteuser.mapper.SiteUserMapper;

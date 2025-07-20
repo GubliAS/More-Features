@@ -1,9 +1,9 @@
 package com.example.siteuser.mapper;
 
-import com.example.commonentities.SiteUser;
-import com.example.commonentities.SiteUserDTO;
-import com.example.commonentities.Role;
-import com.example.commonentities.RoleDTO;
+import com.example.siteuser.entity.SiteUser;
+import com.example.siteuser.dto.SiteUserDTO;
+import com.example.siteuser.entity.Role;
+import com.example.siteuser.dto.RoleDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

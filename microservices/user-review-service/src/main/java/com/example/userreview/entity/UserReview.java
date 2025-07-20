@@ -23,9 +23,8 @@ public class UserReview {
 
     private String comment;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_id")
-    private com.example.product.entity.Product product;
+    @Column(name = "product_id")
+    private Long productId;
 
     @ElementCollection
     private java.util.List<String> images;

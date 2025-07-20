@@ -23,6 +23,15 @@ public class SiteUser {
     private String firstName;
     private String lastName;
     private String phoneNumber;
+    
+    // Seller-specific fields
+    private String storeName;
+    private String idCardType;
+    private String idCardCountry;
+    private String idCardNumber;
+    private Boolean isVerified = false;
+    private String verificationStatus = "PENDING"; // PENDING, APPROVED, REJECTED
+    
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
         name = "user_roles",

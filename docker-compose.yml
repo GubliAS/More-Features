@@ -16,9 +16,9 @@ services:
     image: postgres:15
     container_name: postgres
     environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: 1223
-      POSTGRES_DB: SwiftMart
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 2784
+      POSTGRES_DB: swiftmart
     ports:
       - "5432:5432"
     volumes:
@@ -49,6 +49,12 @@ services:
 
   auth-service:
     build: ./microservices/auth-service
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/swiftmart
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 2784
     ports:
       - "8080:8080"
 
@@ -58,9 +64,9 @@ services:
       - postgres
       - elasticsearch
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/SwiftMart
-      SPRING_DATASOURCE_USERNAME: myuser
-      SPRING_DATASOURCE_PASSWORD: 1223
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/swiftmart
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 2784
       SPRING_ELASTICSEARCH_URIS: http://elasticsearch:9200
     ports:
       - "8081:8081"
@@ -70,9 +76,9 @@ services:
     depends_on:
       - postgres
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/SwiftMart
-      SPRING_DATASOURCE_USERNAME: myuser
-      SPRING_DATASOURCE_PASSWORD: 1223
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/swiftmart
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 2784
     ports:
       - "8085:8085"
 
@@ -81,9 +87,9 @@ services:
     depends_on:
       - postgres
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/SwiftMart
-      SPRING_DATASOURCE_USERNAME: myuser
-      SPRING_DATASOURCE_PASSWORD: 1223
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/swiftmart
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 2784
     ports:
       - "8083:8083"
 
@@ -92,9 +98,9 @@ services:
     depends_on:
       - postgres
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/SwiftMart
-      SPRING_DATASOURCE_USERNAME: myuser
-      SPRING_DATASOURCE_PASSWORD: 1223
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/swiftmart
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 2784
     ports:
       - "8082:8082"
 
@@ -103,9 +109,9 @@ services:
     depends_on:
       - postgres
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/SwiftMart
-      SPRING_DATASOURCE_USERNAME: myuser
-      SPRING_DATASOURCE_PASSWORD: 1223
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/swiftmart
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 2784
     ports:
       - "8084:8084"
 
@@ -180,4 +186,4 @@ services:
 volumes:
   postgres_data:
   elasticsearch_data:
-  video_uploads: 
+  video_uploads:

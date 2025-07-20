@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-07-03T01:20:49+0000",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.15 (Oracle Corporation)"
+    date = "2025-07-20T01:02:49+0000",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.12 (Oracle Corporation)"
 )
 @Component
 public class SiteUserMapperImpl implements SiteUserMapper {
@@ -35,23 +35,24 @@ public class SiteUserMapperImpl implements SiteUserMapper {
     }
 
     @Override
-    public SiteUser toEntity(SiteUserDTO dto) {
-        if ( dto == null ) {
+    public SiteUser toEntity(SiteUserDTO userDto) {
+        if ( userDto == null ) {
             return null;
         }
 
         SiteUser siteUser = new SiteUser();
 
-        siteUser.setId( dto.getId() );
-        siteUser.setEmailAddress( dto.getEmailAddress() );
-        siteUser.setPhoneNumber( dto.getPhoneNumber() );
-        siteUser.setPassword( dto.getPassword() );
-        siteUser.setRoles( roleDTOSetToRoleSet( dto.getRoles() ) );
+        siteUser.setId( userDto.getId() );
+        siteUser.setEmailAddress( userDto.getEmailAddress() );
+        siteUser.setPhoneNumber( userDto.getPhoneNumber() );
+        siteUser.setPassword( userDto.getPassword() );
+        siteUser.setRoles( roleDTOSetToRoleSet( userDto.getRoles() ) );
 
         return siteUser;
     }
 
-    protected RoleDTO roleToRoleDTO(Role role) {
+    @Override
+    public RoleDTO toDto(Role role) {
         if ( role == null ) {
             return null;
         }
@@ -64,6 +65,20 @@ public class SiteUserMapperImpl implements SiteUserMapper {
         return roleDTO;
     }
 
+    @Override
+    public Role toEntity(RoleDTO roleDto) {
+        if ( roleDto == null ) {
+            return null;
+        }
+
+        Role role = new Role();
+
+        role.setId( roleDto.getId() );
+        role.setName( roleDto.getName() );
+
+        return role;
+    }
+
     protected Set<RoleDTO> roleSetToRoleDTOSet(Set<Role> set) {
         if ( set == null ) {
             return null;
@@ -71,23 +86,10 @@ public class SiteUserMapperImpl implements SiteUserMapper {
 
         Set<RoleDTO> set1 = new LinkedHashSet<RoleDTO>( Math.max( (int) ( set.size() / .75f ) + 1, 16 ) );
         for ( Role role : set ) {
-            set1.add( roleToRoleDTO( role ) );
+            set1.add( toDto( role ) );
         }
 
         return set1;
-    }
-
-    protected Role roleDTOToRole(RoleDTO roleDTO) {
-        if ( roleDTO == null ) {
-            return null;
-        }
-
-        Role role = new Role();
-
-        role.setId( roleDTO.getId() );
-        role.setName( roleDTO.getName() );
-
-        return role;
     }
 
     protected Set<Role> roleDTOSetToRoleSet(Set<RoleDTO> set) {
@@ -97,7 +99,7 @@ public class SiteUserMapperImpl implements SiteUserMapper {
 
         Set<Role> set1 = new LinkedHashSet<Role>( Math.max( (int) ( set.size() / .75f ) + 1, 16 ) );
         for ( RoleDTO roleDTO : set ) {
-            set1.add( roleDTOToRole( roleDTO ) );
+            set1.add( toEntity( roleDTO ) );
         }
 
         return set1;
